@@ -8,7 +8,11 @@ interface OmdbResponse {
   Poster: string;
 }
 export function omdbMapper(Response: OmdbResponse): Movie {
-  const parseMovie = {} as Movie;
-
-  return parseMovie;
+  return {
+    title: Response.Title,
+    year: Response.Year,
+    imdbId: Response.imdbID,
+    type: Response.Type,
+    poster: Response.Poster,
+  };
 }
