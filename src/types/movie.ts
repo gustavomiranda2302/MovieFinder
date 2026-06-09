@@ -1,4 +1,4 @@
-export type movies = {
+export type Movie = {
   title: string;
   year: string;
   imdbId: string;
