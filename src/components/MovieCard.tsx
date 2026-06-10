@@ -10,8 +10,12 @@ interface MovieCardProps {
 export function MovieCard({ movie }: MovieCardProps) {
     return (
         <div>
-            <span>{movie.title}</span>
             <img src={movie.poster} alt="poster do filme" />
+            <div>
+
+                <p>{movie.type}</p>
+                <span>{movie.imdbId}</span>
+            </div>
         </div>
 
     )

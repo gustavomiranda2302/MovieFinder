@@ -12,7 +12,7 @@ function App() {
     setLoading(true);
     try {
       const result = await fetchMovie(s);
-      setMovies([result]);
+      setMovies(result);
     } catch (error) {
       setError("filme nao encontrado")
 
