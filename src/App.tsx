@@ -25,7 +25,13 @@ function App() {
   }
 
   return (
-    <div></div>
+    <div>
+      <SearchBar onSearch={handleSearch} />
+      {loading && <span> Carregando...</span>}
+      {!loading && error != null && <span>{error}</span>}
+      {!loading && error == null && <MovieList list={movies} />}
+
+    </div>
   )
 }
 
