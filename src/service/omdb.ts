@@ -25,6 +25,5 @@ export async function fetchMovie(search: string): Promise<Movie[]> {
     throw new Error(`erro http status:${response.status}`);
   }
   const data = await response.json();
-  console.log(data);
   return omdbMapper(data.Search);
 }
