@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+
+}
+.card{
+    border: 2px solid #7B2FBE;
+    gap: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: clamp(160px, 45vw, 220px);
+    font-size: clamp(10px, 2vw, 14px);
+    height: 450px;
+    object-fit: contain;
+    word-wrap: break-word;
+    border-radius: 36px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 12px rgba(123, 47, 190, 0.4)
+
+}
+img{
+    max-height: 100%;
+    max-width: 75%;
+    object-fit: contain;
+}
+.id-movie{
+    white-space: nowrap;
+}

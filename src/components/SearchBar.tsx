@@ -1,4 +1,4 @@
-
+import "../styles/searchBar.css"
 interface SearchBarProps {
     onSearch: (valor: string) => void;
 
@@ -16,14 +16,14 @@ export function SearchBar({ onSearch }: SearchBarProps) {
         onSearch(newSearch);
     }
     return (
-        <header>
+        <header className="search">
             <h1>MovieFinder</h1>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="titulo"> Nome do filme:</label>
-                    <input type="text" id="titulo" name="pesquisa" required />
-                    <button type='submit'> Pesquisar</button>
-                </div>
+
+                <label htmlFor="titulo"> Nome do filme:</label>
+                <input type="text" id="titulo" name="pesquisa" required />
+                <button type='submit'> Pesquisar</button>
+
             </form>
         </header>
     )

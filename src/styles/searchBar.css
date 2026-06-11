@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.search{
+    min-width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+input{
+    border: 2px solid #7B2FBE;
+    border-radius: 8px; 
+    padding: 4px 8px;
+    outline: none;
+    
+}
+input:focus 
+{
+    border-color: #a855f7; 
+    box-shadow: 0 0 6px rgba(123,47,190,0.6);
+    transition: border-color 0.2s;
+}
+h1, label{
+    color: white;
+}
+button{
+    background-color: #7B2FBE;
+    border-radius: 8px;
+    font-size: clamp(10px, 2vw, 18px);
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+
+}
+ button:hover { background-color: #a855f7; }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

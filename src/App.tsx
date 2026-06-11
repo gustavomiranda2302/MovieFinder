@@ -1,3 +1,4 @@
+import "./styles/app.css"
 import { useState } from "react";
 import type { Movie } from "./types/movie"
 import { SearchBar } from "./components/SearchBar"
@@ -25,13 +26,14 @@ function App() {
   }
 
   return (
-    <div>
+    <main>
+
       <SearchBar onSearch={handleSearch} />
       {loading && <span> Carregando...</span>}
       {!loading && error != null && <span>{error}</span>}
       {!loading && error == null && <MovieList list={movies} />}
+    </main>
 
-    </div>
   )
 }
 
