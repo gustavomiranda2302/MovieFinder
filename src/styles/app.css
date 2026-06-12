@@ -14,3 +14,6 @@ main{
     min-height: 100vh;
     background-color: black;
 }
+.error-msg {
+  color: #f87171;
+}
