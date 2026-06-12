@@ -1,8 +1,12 @@
 # 🎬 MovieFinder
 
-Aplicação web para busca de filmes e séries usando a API pública OMDb. Permite pesquisar títulos por nome, visualizar detalhes e salvar favoritos localmente.
+Aplicação web para busca de filmes e séries usando a API pública OMDb. Permite pesquisar títulos por nome e visualizar detalhes.
 
 Projeto desenvolvido para praticar conceitos básicos do desenvolvimento web.
+
+## Link da Demo
+
+[gmsmovie-finder.netlify.app](https://gmsmovie-finder.netlify.app/)
 
 ## Stack
 
